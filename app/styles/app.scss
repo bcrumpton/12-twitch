@@ -4,3 +4,52 @@
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'font-awesome';
 @import 'box-sizing';
+@import 'reset';
+
+$c-sidebar-bckgrnd: rgb(23, 20, 31);
+$c-search-border: rgb(125, 91, 190);
+$c-search-bckgrnd: rgb(32, 28, 43);
+$c-search-text: rgb(123, 117, 137);
+
+.section {
+  display: flex;
+}
+
+.container {
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  height: 100vh;
+  padding: 1rem;
+  background: $c-sidebar-bckgrnd;
+
+  &__logo {
+    justify-content: center;
+    height: 2rem;
+  }
+
+  &__search {
+    justify-content: center;
+    border: 0.1rem solid $c-search-border;
+    background: $c-search-bckgrnd;
+    color: $c-search-border;
+
+
+    &--icon {
+      color: $c-search-text;
+
+    }
+
+    &--box {
+      padding: 0.5rem;
+      border: 0;
+      background: $c-search-bckgrnd;
+      color: $c-search-text;
+    }
+  }
+}

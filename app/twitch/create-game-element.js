@@ -1,26 +1,16 @@
-export default function createGameItem(game) {
+export default function createGameElement(game) {
   const gameItem = document.createElement('div');
   gameItem.classList.add('game-item');
 
-  const gameName = document.createElement('h3');
-  gameName.classList.add('game-item__name');
-  gameItem.appendChild(gameName);
+  gameItem.innerHTML = `
+  <h3 class="game-item__name"></h3>
+  <h4 class="game-item__popularity"></h4>
+  <img src="" alt="" class="game-item__pic" />`;
 
-  gameName.innerText = game.name;
-
-  const gamePop = document.createElement('h4');
-  gamePop.classList.add('game-item__popularity');
-  gameItem.appendChild(gamePop);
-
-  gamePop.innerText = game.popularity + ' Viewers';
-
-  const gameImg = document.createElement('img');
-  gameImg.classList.add('game-item__pic');
-  gameItem.appendChild(gameImg);
-
-  gameImg.src = game.box.large;
-  gameImg.alt = game.name;
-
+  gameItem.querySelector('.game-item__name').innerText = game.name;
+  gameItem.querySelector('.game-item__popularity').innerText = `${game.popularity} Viewers`;
+  gameItem.querySelector('.game-item__pic').src = game.box.large;
+  gameItem.querySelector('.game-item__pic').alt = game.name;
 
   return gameItem;
-};
+}
