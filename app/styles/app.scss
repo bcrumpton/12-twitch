@@ -10,6 +10,9 @@ $c-sidebar-bckgrnd: rgb(23, 20, 31);
 $c-search-border: rgb(125, 91, 190);
 $c-search-bckgrnd: rgb(32, 28, 43);
 $c-search-text: rgb(123, 117, 137);
+$c-navlist-text: rgb(229, 227, 232);
+$c-navlist-bckgrnd-hover: rgb(32, 28, 43);
+$c-twitch-active: rgb(100, 65, 164);
 
 .section {
   display: flex;
@@ -25,12 +28,12 @@ $c-search-text: rgb(123, 117, 137);
   flex-direction: column;
   width: 20%;
   height: 100vh;
-  padding: 1rem;
   background: $c-sidebar-bckgrnd;
 
   &__logo {
     justify-content: center;
     height: 2rem;
+    margin: 1rem 0;
   }
 
   &__search {
@@ -38,11 +41,15 @@ $c-search-text: rgb(123, 117, 137);
     border: 0.1rem solid $c-search-border;
     background: $c-search-bckgrnd;
     color: $c-search-border;
+    margin: 0.5rem 1.2rem;
 
+    :focus{
+    outline: none;
+    }
 
     &--icon {
       color: $c-search-text;
-
+      margin-left: 0.5rem;
     }
 
     &--box {
@@ -52,4 +59,42 @@ $c-search-text: rgb(123, 117, 137);
       color: $c-search-text;
     }
   }
+
+  &__navlist {
+    color: $c-navlist-text;
+
+    &--group {
+
+      display: flex;
+      align-items: center;
+      padding: 0.5rem 1.2rem;
+
+      &:hover {
+        background: $c-navlist-bckgrnd-hover;
+      }
+    }
+
+    &--icons {
+      margin-right: 1rem;
+      font-size: 5rem;
+    }
+
+    &--item {
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.channel {
+  color: $c-navlist-text;
+  padding: 0.5rem 1.2rem;
+
+  &__pic {
+    height: 2rem;
+  }
+}
+
+.active {
+  border-left: 0.2rem solid $c-twitch-active;
 }
