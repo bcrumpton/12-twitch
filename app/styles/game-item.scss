@@ -1,0 +1,29 @@
+.results {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -0.5rem;
+  justify-content: center;
+}
+
+.directory {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.game-item {
+  flex-basis: calc(100% / 4 - 2rem);
+  padding: 0.5rem;
+  min-width: 10rem;
+  max-width: 15rem;
+
+  &__name {
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+  }
+
+  &__popularity {
+    font-size: 0.7rem;
+    margin: 0.3rem 0;
+  }
+}

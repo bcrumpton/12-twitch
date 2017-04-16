@@ -1,0 +1,15 @@
+.section {
+  display: flex;
+}
+
+.main-content {
+  padding: 1rem;
+  overflow: scroll;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 65rem;
+  margin: 0 auto;
+}
