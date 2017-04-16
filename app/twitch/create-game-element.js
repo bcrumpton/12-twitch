@@ -4,8 +4,8 @@ export default function createGameElement(game) {
 
   gameItem.innerHTML = `
   <img src="" alt="" class="game-item__pic" />
-  <h3 class="game-item__name"></h3>
-  <h4 class="game-item__popularity"></h4>`;
+  <p class="game-item__name"></p>
+  <p class="game-item__popularity"></p>`;
 
   gameItem.querySelector('.game-item__name').innerText = game.name;
   gameItem.querySelector('.game-item__popularity').innerText = `${game.popularity} Viewers`;
