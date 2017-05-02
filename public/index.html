@@ -2,10 +2,100 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>10-twitch</title>
+  <title>bcrumpton / twitch</title>
   <link rel="stylesheet" href="/app.css">
+  <script src="https://use.fontawesome.com/64e8738c19.js"></script>
 </head>
 <body>
+
+  <div class="section">
+    <div class="sidebar">
+      <img class="sidebar__logo"src="http://jsa.x10host.com/twitch/assets/Twitch_Logo_White.png" alt="">
+
+      <div class="sidebar__search">
+        <i class="sidebar__search--icon fa fa-search" aria-hidden="true"></i>
+        <input type="text" class="sidebar__search--box">
+      </div>
+
+      <div class="sidebar__navlist">
+        <div class="sidebar__navlist--group active">
+          <i class="sidebar__navlist--icons fa fa-gamepad"></i><p class="sidebar__navlist--item">Games</p>
+        </div>
+        <div class="sidebar__navlist--group">
+          <i class="sidebar__navlist--icons fa fa-users"></i><p class="sidebar__navlist--item">Communities</p>
+        </div>
+        <div class="sidebar__navlist--group">
+          <i class="sidebar__navlist--icons fa fa-video-camera"></i><p class="sidebar__navlist--item">Channels</p>
+        </div>
+        <div class="sidebar__navlist--group">
+          <i class="sidebar__navlist--icons fa fa-play"></i><p class="sidebar__navlist--item">Videos</p>
+        </div>
+        <div class="sidebar__navlist--group">
+          <i class="sidebar__navlist--icons fa fa-paint-brush"></i><p class="sidebar__navlist--item">Creative</p>
+        </div>
+      </div>
+
+      <div class="channel">
+        <p class="channel__main-heading">RECOMMENDED CHANNELS</p>
+        <hr class="divider">
+        <div class="channel__item">
+          <img class="channel__pic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/teamcoco-profile_image-4e50e8335a85794d-300x300.png" alt="Team Coco">
+          <div class="channel__info">
+            <p class="channel__heading">Team Coco</p>
+            <p class="channel__streaming">streaming The Legend of Zelda: Breath Of The Wild</p>
+          </div>
+        </div>
+        <div class="channel__item">
+          <img class="channel__pic" src="https://static-cdn.jtvnw.net/jtv_user_pictures/teamcoco-profile_image-4e50e8335a85794d-300x300.png" alt="Team Coco">
+          <div class="channel__info">
+            <p class="channel__heading">Team Coco</p>
+            <p class="channel__streaming">streaming The Legend of Zelda: Breath Of The Wild</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="options">
+        <p class="options__heading">MORE AT TWITCH</p>
+        <hr class="divider">
+        <div class="lists">
+          <ul class="options__list">
+            <li class="options__list-item">About</li>
+            <li class="options__list-item">Blog</li>
+            <li class="options__list-item">Cookie Policy</li>
+            <li class="options__list-item">Help</li>
+            <li class="options__list-item">Language</li>
+            <li class="options__list-item">Partners</li>
+            <li class="options__list-item">Store</li>
+          </ul>
+          <ul class="options__list">
+            <li class="options__list-item">Advertisers</li>
+            <li class="options__list-item">Creative</li>
+            <li class="options__list-item">Developers</li>
+            <li class="options__list-item">Jobs</li>
+            <li class="options__list-item">Music</li>
+            <li class="options__list-item">Press</li>
+            <li class="options__list-item">Terms</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="buttons__btn">Log In</button>
+        <button class="buttons__btn">Sign Up</button>
+      </div>
+
+    </div>
+
+    <div class="main-content">
+      <div class="container">
+        <div class="directory">
+          <h2 class="directory-heading">All Games</h2>
+          <ul class="results"></ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="/app.js" charset="utf-8"></script>
 </body>
 </html>

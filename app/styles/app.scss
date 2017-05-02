@@ -2,5 +2,18 @@
 // @import 'normalize-css/normalize';
 
 // $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+
+$c-sidebar-bckgrnd: rgb(23, 20, 31);
+$c-search-border: rgb(125, 91, 190);
+$c-search-bckgrnd: rgb(32, 28, 43);
+$c-search-text: rgb(123, 117, 137);
+$c-navlist-text: rgb(229, 227, 232);
+$c-navlist-bckgrnd-hover: rgb(32, 28, 43);
+$c-twitch-active: rgb(100, 65, 164);
+
 @import 'font-awesome';
 @import 'box-sizing';
+@import 'reset';
+@import 'game-item';
+@import 'layout';
+@import 'sidebar';
